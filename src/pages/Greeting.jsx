@@ -2,9 +2,9 @@ import React from 'react';
 import { useParams } from 'react-router-dom';
 
 function Greeting() {
-    const { id } = useParams(); // Get the random ID from the URL
-    const image = localStorage.getItem(`greetingImage-${id}`); // Retrieve the image from local storage
-    const message = localStorage.getItem(`greetingMessage-${id}`); // Retrieve the message from local storage
+    const { id } = useParams(); 
+    const image = localStorage.getItem(`greetingImage-${id}`);
+    const message = localStorage.getItem(`greetingMessage-${id}`);
 
     return (
         <div className="flex flex-col items-center justify-center min-h-screen bg-orange-100">
